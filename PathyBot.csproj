@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>PathyBot</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <GameDir>C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag</GameDir>
+    <Managed>$(GameDir)\Gorilla Tag_Data\Managed</Managed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.dll" />
+    <Reference Include="$(Managed)\Assembly-CSharp.dll" />
+    <Reference Include="$(Managed)\UnityEngine.dll" />
+    <Reference Include="$(Managed)\UnityEngine.CoreModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.PhysicsModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.InputLegacyModule.dll" />
+    <Reference Include="$(Managed)\PhotonUnityNetworking.dll" />
+    <Reference Include="$(Managed)\PhotonRealtime.dll" />
+    <Reference Include="$(Managed)\UnityEngine.XRModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.IMGUIModule.dll" />
+    <Reference Include="$(Managed)\Photon3Unity3D.dll" />
+    <Reference Include="$(Managed)\UnityEngine.AudioModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestModule.dll" />
+   <Reference Include="$(Managed)\UnityEngine.JSONSerializeModule.dll" />
+  </ItemGroup>
+</Project>
